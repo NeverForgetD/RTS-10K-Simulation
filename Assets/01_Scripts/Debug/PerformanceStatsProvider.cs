@@ -6,7 +6,7 @@ public class PerformanceStatsProvider : MonoBehaviour
 
     public float FPS { get; private set; }
     public float FrameTime { get; private set; }
-    public int ActiveUnities { get; private set; }
+    public int ActiveUnits { get; private set; }
     public long GCAlloc { get; private set; }
 
     private float _deltatime;
@@ -34,7 +34,7 @@ public class PerformanceStatsProvider : MonoBehaviour
 
     public void SetActiveUnits(int count)
     {
-        ActiveUnities = count;
+        ActiveUnits = count;
     }
 
 }

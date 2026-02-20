@@ -13,9 +13,9 @@ public class PerformanceUIController : MonoBehaviour
         var stats = PerformanceStatsProvider.Instance;
 
         //TODO
-        //fpsText.text = stats.FPS.ToString("F0");
-        //frameTimeText.text = stats.FrameTimeMs.ToString("F2");
-        //unitText.text = stats.ActiveUnits.ToString();
-        //gcText.text = (stats.GCAlloc / 1024f).ToString("F0") + " KB";
+        fpsText.text = stats.FPS.ToString("F0");
+        frameTimeText.text = stats.FrameTime.ToString("F2");
+        unitText.text = stats.ActiveUnits.ToString();
+        gcText.text = (stats.GCAlloc / 1024f).ToString("F0") + " KB";
     }
 }
